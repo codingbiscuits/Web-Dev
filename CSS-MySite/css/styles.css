@@ -1,0 +1,138 @@
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+
+    80% {
+        transform: translateX(1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+
+    80% {
+        transform: translateX(-1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    color: #eee;
+    background-color: #3C4048;
+}
+
+.header {
+    height: 80%;
+    background-color: #00ABB3;
+}
+
+.cloud1 {
+    margin-top: 9%;
+    position: relative;
+    left: 75%;
+    animation: moveInRight 1s ease-out;
+    animation-delay: .1s;
+}
+
+.cloud1:hover {
+    transform: scale(130%);
+}
+
+.cloud1:active {
+    transform: scale(100%);
+}
+
+.header-content {
+    text-align: center;
+}
+
+.heading-primary {
+    display: inline-block;
+    margin-bottom: 4rem;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 2rem;
+    text-transform: uppercase;
+    animation: moveInLeft 1s ease-out;
+}
+
+.heading-primary:hover {
+    transform: skewX(-20deg);
+}
+
+
+.heading-secondary {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 500;
+    letter-spacing: 1.5rem;
+    text-transform: uppercase;
+    animation: moveInRight 1s ease-out;
+    padding-bottom: 2rem;
+}
+
+.cloud2 {
+    position: absolute;
+    right: 75%;
+    animation: moveInLeft 1s ease-out;
+    animation-delay: .1s;
+}
+
+.cloud2:hover {
+    transform: scale(130%);
+}
+
+.cloud2:active {
+    transform: scale(100%);
+}
+
+.mountain {
+    position: relative;
+    display: block;
+    height: 100%;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: moveIn 1s ease-in;
+    margin-top: 5rem;
+    z-index: 1;
+}
+
+.about-section {
+    height: 20%;
+}
